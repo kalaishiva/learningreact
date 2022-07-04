@@ -9,6 +9,7 @@ const firstName = 'Kalaivani';
 const lastName = 'Sivakumar';
 const num = 3;
 const year = new Date().getFullYear();
+const img = "https://picsum.photos/200";
 
  ReactDOM.render(
  <div>
@@ -18,7 +19,7 @@ const year = new Date().getFullYear();
  <ul>
    <li>Pasta</li>
    <li>Pizza</li>
-   <li>idli</li>
+   <li>Burger</li>
  </ul>
  <div >
    <img src="image/img1.jpeg" alt="pasta" className='food-img'/>
@@ -28,6 +29,10 @@ const year = new Date().getFullYear();
  <h2>Welcome {`${firstName} ${lastName}`}</h2>
  <h3>Hello {firstName + " " + lastName}</h3>
  <h3>Hi {firstName} {lastName}</h3>
+ <h3 className='heading' >Random image is generated</h3>
+ <img src={img} alt="image" />
+ <h3 className='heading' >Random image is generated in gray color</h3>
+ <img src={img + "?grayscale"} alt="image" />
 
  <p>Your lucky number is {num}</p>
  <p>Random lucky number generated {Math.floor(Math.random () * 100)}</p>
