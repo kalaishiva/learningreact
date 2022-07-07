@@ -11,9 +11,16 @@ const num = 3;
 const year = new Date().getFullYear();
 const img = "https://picsum.photos/200";
 
+const customStyle = {
+  color: "green",
+  fontSize: "35px",
+  border : '3px solid brown',
+  textAlign: 'center',
+}
+
  ReactDOM.render(
  <div>
- <h1 className='heading' contenteditable="true" spellcheck="true">Hello world!</h1>
+ <h1 className='heading' contenteditable="true" spellcheck="true" style={customStyle}>Hello world!</h1>
  <p>This is the paragraph</p>
  <h2>Favorite food</h2>
  <ul>
